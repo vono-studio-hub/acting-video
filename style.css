@@ -1,0 +1,48 @@
+
+/* 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 전체 화면 */
+body {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 영상 영역 */
+.video-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* 영상 */
+#actingVideo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+
+  object-fit: contain;
+  background-color: #000;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .video-container {
+    padding: 0;
+  }
+
+  #actingVideo {
+    max-height: 100dvh;
+  }
+}
